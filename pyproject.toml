@@ -6,6 +6,7 @@ authors = ["Facundo Adrián Lucianna <facundolucianna@gmail.com>"]
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "ipykernel>=6.29.5",
     "jupyter>=1.1.1",
     "jupyterlab>=4.4.3",
     "matplotlib>=3.10.3",
@@ -18,4 +19,9 @@ dependencies = [
     "seaborn>=0.13.2",
     "tqdm>=4.67.1",
     "vizdoom>=1.2.4",
+]
+
+[tool.uv.workspace]
+members = [
+    "clase2/exercise/introIA_clase2",
 ]

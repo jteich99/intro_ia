@@ -1,9 +1,15 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.11"
 resolution-markers = [
     "python_full_version >= '3.12'",
     "python_full_version < '3.12'",
+]
+
+[manifest]
+members = [
+    "intro-ia",
+    "introia-clase2",
 ]
 
 [[package]]
@@ -510,6 +516,7 @@ name = "intro-ia"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "ipykernel" },
     { name = "jupyter" },
     { name = "jupyterlab" },
     { name = "matplotlib" },
@@ -526,6 +533,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "jupyterlab", specifier = ">=4.4.3" },
     { name = "matplotlib", specifier = ">=3.10.3" },
@@ -539,6 +547,21 @@ requires-dist = [
     { name = "tqdm", specifier = ">=4.67.1" },
     { name = "vizdoom", specifier = ">=1.2.4" },
 ]
+
+[[package]]
+name = "introia-clase2"
+version = "0.1.0"
+source = { virtual = "clase2/exercise/introIA_clase2" }
+
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+]
+
+[package.metadata]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ipykernel", specifier = ">=6.29.5" }]
 
 [[package]]
 name = "ipykernel"
