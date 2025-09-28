@@ -1,6 +1,7 @@
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 # Inteligencia Artificial
+> Versión de cursada de Juan Ignacio Teich
 Este repositorio contiene el material de clases (presentaciones, ejercicios y notebooks) para Inteligencia Artificial (CEIA - FIUBA). 
 
 Para revisar los criterios de aprobación, ver el [documento correspondiente](CriteriosAprobacion.md).
